@@ -5,6 +5,7 @@ import cadastroee.model.Usuario;
 import java.util.List;
 import jakarta.ejb.Local;
 
+
 @Local
 public interface UsuarioFacadeLocal {
 

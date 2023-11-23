@@ -1,5 +1,6 @@
 package cadastroee.servlets;
 
+// importações
 import cadastroee.model.Produto;
 import cadastroee.controller.ProdutoFacadeLocal;
 import java.io.IOException;

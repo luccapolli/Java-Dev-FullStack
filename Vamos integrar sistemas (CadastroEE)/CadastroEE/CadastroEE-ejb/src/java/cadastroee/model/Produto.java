@@ -39,6 +39,7 @@ public class Produto implements Serializable {
     private String nome;
     @Column(name = "quantidade")
     private Integer quantidade;
+    // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
     @Column(name = "precoVenda")
     private Float precoVenda;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "idProduto")
@@ -108,6 +109,7 @@ public class Produto implements Serializable {
 
     @Override
     public boolean equals(Object object) {
+        // TODO: Warning - this method won't work in the case the id fields are not set
         if (!(object instanceof Produto)) {
             return false;
         }

@@ -1,6 +1,6 @@
 package cadastroee.controller;
 
-// importações
+// importações 
 import java.util.List;
 import cadastroee.model.PessoaJuridica;
 import jakarta.ejb.Local;

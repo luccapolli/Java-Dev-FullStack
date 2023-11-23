@@ -1,6 +1,6 @@
 package cadastroee.model;
 
-// importações 
+// importações
 import java.io.Serializable;
 import java.math.BigDecimal;
 import jakarta.persistence.Basic;
@@ -38,6 +38,7 @@ public class Movimento implements Serializable {
     private Integer quantidade;
     @Column(name = "tipo")
     private Character tipo;
+    // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
     @Column(name = "valorUnitario")
     private BigDecimal valorUnitario;
     @JoinColumn(name = "idPessoa", referencedColumnName = "idPessoa")
@@ -122,6 +123,7 @@ public class Movimento implements Serializable {
 
     @Override
     public boolean equals(Object object) {
+        // TODO: Warning - this method won't work in the case the id fields are not set
         if (!(object instanceof Movimento)) {
             return false;
         }

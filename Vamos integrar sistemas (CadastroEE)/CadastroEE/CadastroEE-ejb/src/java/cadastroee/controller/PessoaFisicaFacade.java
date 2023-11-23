@@ -1,6 +1,6 @@
 package cadastroee.controller;
 
-// Iimportações
+// importações
 import cadastroee.model.PessoaFisica;
 import jakarta.ejb.Stateless;
 import jakarta.persistence.EntityManager;

@@ -1,6 +1,6 @@
 package cadastroee.model;
 
-// importações 
+// importações
 import java.io.Serializable;
 import jakarta.persistence.Basic;
 import jakarta.persistence.Column;
@@ -74,6 +74,7 @@ public class PessoaJuridica implements Serializable {
 
     @Override
     public boolean equals(Object object) {
+        // TODO: Warning - this method won't work in the case the id fields are not set
         if (!(object instanceof PessoaJuridica)) {
             return false;
         }
